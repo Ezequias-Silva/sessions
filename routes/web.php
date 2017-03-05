@@ -20,3 +20,5 @@ Route::get('/produtos','ProdutoController@index');
 Route::get('/produtos/cria','ProdutoController@cria');
 
 Route::post('/produtos','ProdutoController@armazena');
+
+Route::get('/carrinho/adiciona/{produto}','CarrinhoController@adiciona');

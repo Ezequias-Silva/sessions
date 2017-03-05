@@ -14,6 +14,12 @@
 
       </div>
 
+      @if (Session::has('mensagem'))
+      <div class="aler alert-sucess" role="alert">
+        {{ Session::get('mensagem')}}
+      </div>
+      @endif
+
       @yield('content')
 
     </div>
