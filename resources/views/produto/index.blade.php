@@ -32,11 +32,11 @@
 
         <tbody>
           @foreach ($produtos as $produto)
-
+          <tr>
             <td>{{ $produto->id }}</td>
             <td>{{ $produto->nome }}</td>
             <td>{{ $produto->preco }}</td>
-
+          </tr>  
           @endforeach
         </tbody>
       </table>

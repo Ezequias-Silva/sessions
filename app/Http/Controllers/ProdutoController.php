@@ -11,4 +11,13 @@ class ProdutoController extends Controller
       $produtos = Produto::all();
       return view('produto.index',compact('produtos'));
     }
+
+    public function cria(){
+      return view('produto.cria');
+    }
+
+    public function armazena(){
+      Produto::create(request()->all());
+      return redirect('/produtos');
+    }
 }
