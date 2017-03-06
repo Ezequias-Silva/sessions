@@ -39,7 +39,7 @@
             <th>Id</th>
             <th>Nome</th>
             <th>Preço</th>
-            <th></th>
+            <th>Remove</th>
           </tr>
         </thead>
 
@@ -50,7 +50,7 @@
             <td>{{ $produto->nome }}</td>
             <td>{{ $produto->preco }}</td>
             <th>
-              <a href="/carrinho/adiciona/{{ $produto->id }}"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+              <a href="/carrinho/adiciona/{{ $produto->id }}"><span class="glyphicon glyphicon-shopping-cart">Adiciona</span></a>
             </th>
           </tr>
           @endforeach

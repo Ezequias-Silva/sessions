@@ -24,3 +24,5 @@ Route::post('/produtos','ProdutoController@armazena');
 Route::get('/carrinho/adiciona/{produto}','CarrinhoController@adiciona');
 
 Route::get('/carrinho/exibe','CarrinhoController@exibe');
+
+Route::delete('/carrinho/remove/{produto}','CarrinhoController@remove');
