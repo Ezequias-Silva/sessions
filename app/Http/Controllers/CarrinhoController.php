@@ -21,4 +21,8 @@ class CarrinhoController extends Controller
       Session::flash('mensagem','Produto adicionado ao carrinho');
       return redirect('/produtos');
     }
+
+    public function exibe(){
+      return view('carrinho.exibe');
+    }
 }
